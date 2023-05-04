@@ -1,5 +1,5 @@
 package("mocutils")
   set_urls("https://github.com/mo-crystal/mocutils.git")
-  on_install("windows", function (package)
+  on_install("windows", "mingw", "linux", function (package)
     os.vrun("xmake")
   end)
