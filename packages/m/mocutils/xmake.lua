@@ -1,6 +1,5 @@
 package("mocutils")
   set_urls("https://github.com/mo-crystal/mocutils.git")
-  add_versions("1.0.0")
   on_install("mingw", function (package)
     os.vrun("xmake f -p mingw")
   end)
